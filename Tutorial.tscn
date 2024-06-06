@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://v28vmjc1cabt"]
+
+[ext_resource type="PackedScene" uid="uid://b7oqvhb0dyf6o" path="res://Scenes/player.tscn" id="1_ppbc3"]
+[ext_resource type="TileSet" uid="uid://cn0ewfbcbrrsp" path="res://Assets/GrassTileSet.tres" id="2_n50mf"]
+
+[node name="Tutorial" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_ppbc3")]
+position = Vector2(0, -8)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(0, 8)
+zoom = Vector2(4.38, 4.38)
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource("2_n50mf")
+format = 2
+layer_0/tile_data = PackedInt32Array(65533, 65536, 0, 65534, 65536, 0, 65535, 65536, 0, 0, 65536, 0, 1, 65536, 0, 2, 65536, 0, 3, 65536, 0, 4, 65536, 0, 5, 65536, 0)

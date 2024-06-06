@@ -11,5 +11,18 @@ config_version=5
 [application]
 
 config/name="Platformer"
+run/main_scene="res://Tutorial.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[aseprite_importers]
+
+aseprite_executable_path="C:/Program Files/Aseprite/Aseprite.exe"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/nklbdev.importality/plugin.cfg")
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0

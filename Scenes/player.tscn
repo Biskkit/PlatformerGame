@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://b7oqvhb0dyf6o"]
+
+[ext_resource type="PackedScene" uid="uid://dnpj606glybx3" path="res://Assets/Monocle guy 16x16.aseprite" id="1_0r2fm"]
+[ext_resource type="Script" path="res://Scripts/playerController.gd" id="1_o37rl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d7thn"]
+size = Vector2(8, 11)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_o37rl")
+
+[node name="Monocle guy 16x16" parent="." instance=ExtResource("1_0r2fm")]
+texture_filter = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2.5)
+shape = SubResource("RectangleShape2D_d7thn")
