@@ -11,6 +11,7 @@ script = ExtResource("1_o37rl")
 
 [node name="Monocle guy 16x16" parent="." instance=ExtResource("1_0r2fm")]
 texture_filter = 1
+script = ExtResource("1_o37rl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 2.5)
